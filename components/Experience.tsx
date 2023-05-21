@@ -49,7 +49,7 @@ function Experience({}: Props) {
       name: "English Auction",
       description:
         "This is an Ethereum-based smart contract implementing an English Auction system for NFT trading, where a single NFT can be auctioned off to the highest bidder within a set time period.",
-      category: "React-Native",
+      category: "Solidity",
       link: "https://github.com/hakanfk/DeFi-EnglishAuction",
     },
     {
