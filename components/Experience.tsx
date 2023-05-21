@@ -50,7 +50,7 @@ function Experience({}: Props) {
       description:
         "A staking contract for a hypothetical DeFi token, illustrating the potential of decentralized finance and the principle of earning interest through token staking.",
       category: "Solidity",
-      link: "https://github.com/hakanfk/DeFi-Lending-Protocol",
+      link: "https://github.com/hakanfk/DeFi-Staking-Contract",
     },
     {
       id: 1,

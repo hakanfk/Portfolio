@@ -63,29 +63,29 @@ function About({}: Props) {
             Galatasaray University. For now I have no experience in Business
             World to show you but I'm willing to have some in near future and
             I'd be very grateful if it is you who decide to give me a chance. */}
-            I'm Furkan Hakan Karaaslan, a Computer Engineering student at
+            I&apos;m Furkan Hakan Karaaslan, a Computer Engineering student at
             Galatasaray University in Istanbul. My curiosity in coding has led
             me to develop expertise in
             <h2 className=" text-orange-400 ">
               React, React Native, Solidity, and Puppeteer.
             </h2>
             <br />
-            As a student, I've learned to adapt quickly to new technologies and
-            have pushed my understanding through various personal projects. My
-            interests in blockchain technology have led me to Solidity, and I've
-            honed automation skills with Puppeteer.
+            As a student, I&apos; ve learned to adapt quickly to new
+            technologies and have pushed my understanding through various
+            personal projects. My interests in blockchain technology have led me
+            to Solidity, and I&apos;ve honed automation skills with Puppeteer.
             <br />
             <br />
-            Driven by a passion for dynamic programming, I've honed my skills in
-            React and React Native, building intuitive web and mobile
+            Driven by a passion for dynamic programming, I&apos;ve honed my
+            skills in React and React Native, building intuitive web and mobile
             applications. My projects reflect my strong grasp of component-based
             design and cross-platform development, demonstrating my commitment
             to delivering high-quality software products.
             <br />
             <br />
-            While new to the professional world, I'm eager to bring my technical
-            abilities to the business landscape and create significant,
-            impactful solutions. Lets connect and explore potential
+            While new to the professional world, I&apos;m eager to bring my
+            technical abilities to the business landscape and create
+            significant, impactful solutions. Lets connect and explore potential
             opportunities.
           </p>
         </motion.div>
