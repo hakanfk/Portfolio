@@ -20,7 +20,7 @@ function About({}: Props) {
       </h3>
       <div className="flex flex-col mt-16 md:mt-0 md:flex-row sm:gap-x-4 md:justify-around items-center">
         <div className="relative mt-8 md:mt-0 h-32 w-full md:w-1/3 flex justify-center items-center text-center">
-          <div className="animate-pulse w-36 h-36 md:w-60 md:h-60  bg-gradient-to-r from-[#3f5289] to-[#859398] absolute top-2 md:top-0 blur rounded-full" />
+          <div className="" />
           <motion.img
             initial={{
               x: -500,
@@ -52,26 +52,41 @@ function About({}: Props) {
           transition={{
             duration: 2,
           }}
-          className="flex w-full mt-12 items-center md:w-2/3 flex-col"
+          className="flex w-full mt-24 items-center md:w-2/3 flex-col"
         >
           <h2 className="text-lg text-orange-600 font-bold tracking-widest">
             A Little Background
           </h2>
-          <p className=" md:w-[90%] mt-4 ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
-            enim. Nostrum maxime odio id quis ullam sit aliquam impedit nobis
-            recusandae reprehenderit. Itaque sit omnis expedita aut fugit
-            incidunt similique. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Vel debitis minus earum, doloremque tempore
-            officiis quidem eum aperiam similique odio, beatae quaerat?
-            Similique, autem reiciendis? Ipsam, officia nihil! Nemo, at. Lorem
-            ipsum dolor, sit amet consectetur adipisicing elit. Sapiente harum,
-            quos deserunt repudiandae fugiat facere ea at odio sint dicta, quas
-            veniam quod ducimus reiciendis excepturi provident tempora voluptas
-            quasi? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Dicta voluptas recusandae nihil reprehenderit maiores perspiciatis
-            illo quo illum fugiat dolor, magni, nesciunt porro quod commodi
-            corrupti natus. Placeat, eveniet voluptate.
+          <p className=" md:w-[90%] mt-4 text-sm ">
+            {/* Hi, It's me. Furkan Hakan Karaaslan. I'm currently 23 and living in
+            Turkey, Istanbul. At the moment I'm studying Computer Engineering in
+            Galatasaray University. For now I have no experience in Business
+            World to show you but I'm willing to have some in near future and
+            I'd be very grateful if it is you who decide to give me a chance. */}
+            I'm Furkan Hakan Karaaslan, a Computer Engineering student at
+            Galatasaray University in Istanbul. My curiosity in coding has led
+            me to develop expertise in
+            <h2 className=" text-orange-400 ">
+              React, React Native, Solidity, and Puppeteer.
+            </h2>
+            <br />
+            As a student, I've learned to adapt quickly to new technologies and
+            have pushed my understanding through various personal projects. My
+            interests in blockchain technology have led me to Solidity, and I've
+            honed automation skills with Puppeteer.
+            <br />
+            <br />
+            Driven by a passion for dynamic programming, I've honed my skills in
+            React and React Native, building intuitive web and mobile
+            applications. My projects reflect my strong grasp of component-based
+            design and cross-platform development, demonstrating my commitment
+            to delivering high-quality software products.
+            <br />
+            <br />
+            While new to the professional world, I'm eager to bring my technical
+            abilities to the business landscape and create significant,
+            impactful solutions. Lets connect and explore potential
+            opportunities.
           </p>
         </motion.div>
       </div>

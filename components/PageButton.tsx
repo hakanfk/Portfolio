@@ -43,7 +43,7 @@ function PageButton({}: Props) {
             className="group-hover: relative flex justify-center items-center h-8 w-24 z-10 px-3 py-1 rounded-full bg-black
             text-slate-300 hover:text-white"
           >
-            <Link href="#experience">Experience</Link>
+            <Link href="#experience">Projects</Link>
           </div>
         </div>
       </motion.div>
@@ -82,7 +82,7 @@ function PageButton({}: Props) {
             className="group-hover: flex justify-center items-center relative h-8 w-24 z-10 px-3 py-1 rounded-full bg-black
       text-slate-300 hover:text-white"
           >
-            <Link href="about">Projects</Link>
+            <Link href="#contact">Contact</Link>
           </div>
         </div>
       </motion.div>

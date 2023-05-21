@@ -55,14 +55,14 @@ function Contact({}: Props) {
             <div className=" tracking-widest text-xl flex justify-end m-2 ">
               VISA
             </div>
-            <div className="w-10 h-10">
+            <div className="w-10 h-10 mb-2">
               <img src="/chip.png" alt="" />
             </div>
-            <div className="mt-6 text-2xl tracking-widest font-extralight">
+            <div className="mt-4 text-2xl tracking-widest font-extralight">
               Furkan Hakan Karaaslan
             </div>
-            <div className="mt-6 flex justify-between text-xl tracking-widest font-extralight">
-              0553 986 05 39 <span className="mr-2">2023</span>
+            <div className="mt-6 flex justify-between text tracking-widest font-extralight">
+              0553 986 05 39 <span className="mr-2">novictim40@gmail.com</span>
             </div>
           </div>
         </div>

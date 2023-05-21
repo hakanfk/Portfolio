@@ -34,6 +34,9 @@ module.exports = {
         float: "float 7s infinite",
         blob: "blob 7s infinite",
         passing: "passing 13s linear infinite",
+        torch: "torch 3s infinite",
+        skewed: "skewed 4s linear infinite",
+        glow: "glow 2s ease-in-out infinite",
       },
       keyframes: {
         float: {
@@ -91,6 +94,39 @@ module.exports = {
           "100%": {
             left: "-70px",
             top: "30px",
+          },
+        },
+        torch: {
+          from: {
+            backgroundPosition: "-270% 0",
+          },
+          to: {
+            backgroundPosition: "320% 0",
+          },
+        },
+        skewed: {
+          "0%": {
+            transform: "skewY(6deg)",
+          },
+          "25%": {
+            transform: "skewY(0deg)",
+          },
+          "50%": {
+            transform: "skewY(-6deg)",
+          },
+          "75%": {
+            transform: "skewY(0deg)",
+          },
+          "100%": {
+            transform: "skewY(6deg)",
+          },
+        },
+        glow: {
+          from: {
+            top: "20rem",
+          },
+          to: {
+            top: "-20rem",
           },
         },
       },
