@@ -38,6 +38,22 @@ function Experience({}: Props) {
     },
     {
       id: 1,
+      name: "Wardrobe",
+      description:
+        " An intuitive mobile application that helps users manage and visualize their wardrobe, aiding in daily outfit choices and organization.",
+      category: "React-Native",
+      link: "https://github.com/hakanfk/ReactNative-Wardrobe",
+    },
+    {
+      id: 1,
+      name: "English Auction",
+      description:
+        "This is an Ethereum-based smart contract implementing an English Auction system for NFT trading, where a single NFT can be auctioned off to the highest bidder within a set time period.",
+      category: "React-Native",
+      link: "https://github.com/hakanfk/DeFi-EnglishAuction",
+    },
+    {
+      id: 1,
       name: "DeFi-Funding",
       description:
         "A simple funding project that users can fund the projects they want but minimum deposit amount is $50 dollar or its equivalent of ETH",
@@ -51,6 +67,13 @@ function Experience({}: Props) {
         "A staking contract for a hypothetical DeFi token, illustrating the potential of decentralized finance and the principle of earning interest through token staking.",
       category: "Solidity",
       link: "https://github.com/hakanfk/DeFi-Staking-Contract",
+    },
+    {
+      id: 1,
+      name: "Netflix Clone",
+      description: "A simple Netflix Clone. Made by using free film API's",
+      category: "React",
+      link: "https://github.com/hakanfk/Netflix-Clone",
     },
     {
       id: 1,
@@ -75,14 +98,6 @@ function Experience({}: Props) {
         " A collection of automated bots utilizing Puppeteer, showcasing the capability to handle web scraping, task automation, and browser testing.",
       category: "Puppeteer",
       link: "https://github.com/hakanfk/DeFi-Lending-Protocol",
-    },
-    {
-      id: 1,
-      name: "Wardrobe",
-      description:
-        " An intuitive mobile application that helps users manage and visualize their wardrobe, aiding in daily outfit choices and organization.",
-      category: "React-Native",
-      link: "https://github.com/hakanfk/ReactNative-Wardrobe",
     },
     {
       id: 1,
