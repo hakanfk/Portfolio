@@ -15,10 +15,10 @@ function About({}: Props) {
         className="absolute -top-60 -left-40 bg-gradient-to-tr from-pink-600 to-blue-400 opacity-20 z-50 w-96 rounded-full h-96 animate-spin
         blur-2xl"
       /> */}
-      <h3 className="absolute top-16 md:top-24 text-[28px] md:text-[32px] tracking-[20px] font-light">
+      <h3 className="absolute top-8 md:top-24 text-[28px] md:text-[32px] tracking-[20px] font-light">
         About
       </h3>
-      <div className="flex flex-col mt-16 md:mt-0 md:flex-row sm:gap-x-4 md:justify-around items-center">
+      <div className="flex flex-col  md:mt-0 md:flex-row sm:gap-x-4 md:justify-around items-center">
         <div className="relative hidden sm:flex mt-8 md:mt-0 h-32 w-full md:w-1/3  justify-center items-center text-center">
           <div className="" />
           <motion.img
@@ -101,12 +101,12 @@ function About({}: Props) {
           transition={{
             duration: 2,
           }}
-          className="flex w-full sm:hidden   md:mt-24 items-center md:w-2/3 flex-col"
+          className="flex w-full sm:hidden mt-8  md:mt-24 items-center md:w-2/3 flex-col"
         >
           <h2 className="text-lg text-orange-600 font-bold tracking-widest">
             A Little Background
           </h2>
-          <p className=" md:w-[90%] md:mt-4 sm:text-sm px-1 sm:px-0 text-center ">
+          <p className=" md:w-[90%] md:mt-4 text-sm sm:text-sm px-1 sm:px-0 text-center ">
             {/* Hi, It's me. Furkan Hakan Karaaslan. I'm currently 23 and living in
             Turkey, Istanbul. At the moment I'm studying Computer Engineering in
             Galatasaray University. For now I have no experience in Business
