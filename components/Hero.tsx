@@ -33,7 +33,7 @@ function Hero({}: Props) {
       </div>
 
       <div className="flex flex-col justify-center items-center mt-3">
-        <h2 className=" font-light tracking-[15px] text-xl ">
+        <h2 className=" font-light tracking-[15px] text-xl text-center ">
           Software Engineer
         </h2>
         <h1 className="mt-2">

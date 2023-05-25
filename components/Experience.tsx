@@ -101,11 +101,11 @@ function Experience({}: Props) {
     },
     {
       id: 1,
-      name: "Plane Ticket",
+      name: "Cheap Flight",
       description:
         " A convenient ticket booking app streamlining the process of searching for flights, comparing prices, and securing reservations with a few taps.",
       category: "React-Native",
-      link: "https://github.com/hakanfk/DeFi-Lending-Protocol",
+      link: "https://github.com/hakanfk/Cheap-Flight-App",
     },
     {
       id: 1,
@@ -141,17 +141,19 @@ function Experience({}: Props) {
       className="h-screen flex flex-col justify-center items-center relative p-16
   w-[80vw] mx-auto "
     >
-      <h2
-        className="flex animate-torch absolute bg-gradient-to-r from-black via-white to-black bg-[length:230px_50px] bg-no-repeat  bg-clip-text text-transparent top-20 uppercase tracking-[15px] font-base text-[32px]
+      <div className="relative w-screen flex justify-center items-center -mt-6 ">
+        <h2
+          className="flex animate-torch   bg-gradient-to-r from-black via-white to-black bg-[length:230px_50px] bg-no-repeat  bg-clip-text text-transparent md:mt-10 uppercase tracking-[15px] font-base text-[32px]
       "
-      >
-        My Projects
-      </h2>
+        >
+          My Projects
+        </h2>
+      </div>
 
-      <div className="flex flex-row">
+      <div className="flex flex-row max-w-[400px] py-6 md:max-w-none overflow-x-scroll scrollbar-hide ">
         {categories.map((item) => {
           return (
-            <div className="relative mt-24 group mx-4" key={item.category}>
+            <div className="relative md:mt-0  group mx-4  " key={item.category}>
               <div
                 className="transition duration-300 group-hover:opacity-100 absolute z-0 h-8 w-32
            opacity-50 bg-gradient-to-r from-gray-700 to-gray-300 filter blur-md hover:blur-lg
@@ -171,8 +173,8 @@ function Experience({}: Props) {
       </div>
 
       <div
-        className="flex  gap-x-8 h-[28rem] overflow-x-scroll group 
-      cursor-pointer overflow-hidden max-w-[450px] md:max-w-6xl scrollbar-hide"
+        className="flex justify-start items-center md:py-20  gap-x-8 overflow-x-scroll group 
+      cursor-pointer overflow-hidden  max-w-[360px] md:max-w-6xl scrollbar-hide"
       >
         {/* Card Section */}
 
@@ -182,7 +184,7 @@ function Experience({}: Props) {
             return (
               <div
                 key={project.id}
-                className=" min-w-[18rem] max-w-[18rem] h-[380px] group group-hover:scale-95 group-hover:blur-sm hover:!blur-none bg-black mt-6 flex hover:!scale-100 transition-all duration-200
+                className="min-w-[16rem] md:min-w-[18rem] md:max-w-[18rem] h-[300px] md:h-[380px] group group-hover:scale-95 group-hover:blur-sm hover:!blur-none bg-black mt-2 md:mt-6 flex hover:!scale-100 transition-all duration-200 shadow-md shadow-white
         flex-col justify-between py-6 items-center relative overflow-hidden"
               >
                 <div className=" text-gradient-to-r from-slate-100 to-red-600">
@@ -196,7 +198,9 @@ function Experience({}: Props) {
             text-black tracking-wide hover:scale-110 transition-all duration-300 
              font-light"
                   >
-                    <Link href={project.link}>Github Link</Link>
+                    <Link href={project.link} target="_blank">
+                      Github Link
+                    </Link>
                   </span>
                 </div>
               </div>
@@ -205,7 +209,7 @@ function Experience({}: Props) {
       </div>
       <div
         className="relative overflow-hidden group rounded-full hover:border-2 border-[#250d6e] p-1
-       mt-6 hover:scale-110 hover:shadow-2xl hover:shadow-gray-300 transition duration-700"
+       mt-10 md:mt-6  hover:scale-110 hover:shadow-2xl hover:shadow-gray-300 transition duration-700"
       >
         <div className=" bg-gradient-to-t from-gray-600 to-black p-1 group-hover:top-0 transition-all duration-500 rounded-full -ml-1  w-full h-full absolute -top-24" />
         <Link href="#skills">

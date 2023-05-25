@@ -6,9 +6,9 @@ type Props = {};
 
 function PageButton({}: Props) {
   return (
-    <div className="flex gap-x-8">
+    <div className="flex gap-x-1 md:gap-x-8">
       <motion.div
-        className="flex gap-x-8"
+        className="flex gap-x-1 md:gap-x-8"
         initial={{
           opacity: 0,
           x: -500,
@@ -48,7 +48,7 @@ function PageButton({}: Props) {
         </div>
       </motion.div>
       <motion.div
-        className="flex gap-x-8"
+        className="flex gap-x-1 md:gap-x-8"
         initial={{
           opacity: 0,
           x: 500,

@@ -46,7 +46,7 @@ function Skills({}: Props) {
       transform ease-in-out"
       />
 
-      <div className="flex mt-16 z-20 gap-x-3">
+      <div className="md:flex mt-6 md:mt-16 z-20 gap-y-5 md:gap-y-0 gap-x-3 grid grid-cols-2">
         <Exhibit title="JS-TS" />
         <Exhibit title="REACT NATIVE" />
         <Exhibit title="REACT" />
@@ -55,45 +55,19 @@ function Skills({}: Props) {
         <Exhibit title="PUPPETEER" />
       </div>
 
-      {/* Old Version */}
-
-      {/* <div className="hidden md:flex-col md:flex mt-12 ">
-        <motion.div
-          initial={{ x: -500, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          transition={{ duration: 2 }}
-          className="grid grid-cols-4 gap-x-4"
-        >
-          <SkillCircle />
-          <SkillCircle />
-          <SkillCircle />
-          <SkillCircle />
-        </motion.div>
-        <motion.div
-          initial={{ x: 500, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          transition={{ duration: 2 }}
-          className="grid grid-cols-4 gap-x-4"
-        >
-          <SkillCircle />
-          <SkillCircle />
-          <SkillCircle />
-          <SkillCircle />
-        </motion.div>
+      {/*  <div className="md:hidden mt-12 grid grid-cols-4 gap-x-4">
+        <SkillCircle />
+        <SkillCircle />
+        <SkillCircle />
+        <SkillCircle />
+        <SkillCircle />
+        <SkillCircle />
+        <SkillCircle />
+        <SkillCircle />
       </div> */}
-      <div className="md:hidden mt-12 grid grid-cols-4 gap-x-4">
-        <SkillCircle />
-        <SkillCircle />
-        <SkillCircle />
-        <SkillCircle />
-        <SkillCircle />
-        <SkillCircle />
-        <SkillCircle />
-        <SkillCircle />
-      </div>
       <div
-        className="relative group rounded-full hover:border-2 border-[#250d6e] p-1
-       mt-0 hover:scale-110 hover:shadow-2xl hover:shadow-blue-600 transition duration-1000 overflow-hidden"
+        className="relative group rounded-full hover:border-2 border-[#250d6e] p-1 
+       md:mt-0 mt-12 hover:scale-110 hover:shadow-2xl hover:shadow-blue-600 transition duration-1000 overflow-hidden"
       >
         <div className="bg-blue-600/50 p-1 group-hover:top-0 transition-all duration-500 rounded-full -ml-1  w-full h-full absolute -top-24" />
         <Link href="#contact">

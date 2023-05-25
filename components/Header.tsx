@@ -86,7 +86,7 @@ function Header({}: Props) {
         </div>
       </motion.div>
       {showModal && (
-        <div className="fixed top-0 -left-12 z-50 w-screen h-screen bg-black bg-opacity-50 flex justify-center items-center">
+        <div className="fixed top-0  sm:-left-12 z-50 w-screen h-screen bg-black bg-opacity-50 flex justify-center items-center">
           {/* Modal Content */}
           <div className="bg-gradient-to-r from-gray-700 via-gray-900 to-black  relative bg-opacity-90 h-44 w-72 p-6 rounded-lg shadow-xl flex flex-col justify-start items-center">
             <div className="flex flex-row justify-between items-center mb-4 ">
