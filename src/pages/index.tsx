@@ -38,7 +38,7 @@ export default function Home() {
         <Header />
       </header>
       {/* Hero */}
-      <section id="hero" className="snap-center">
+      <section id="hero" className="">
         <Hero />
       </section>
 
