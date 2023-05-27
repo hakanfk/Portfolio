@@ -1,7 +1,7 @@
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import ExperienceCard from "./ExperienceCard";
-import { AiOutlineDown } from "react-icons/ai";
+import { AiOutlineDown, AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 
 type Props = {};
 type Category = {
@@ -18,6 +18,7 @@ type Projects = {
 
 function Experience({}: Props) {
   const [topic, settopic] = useState("All");
+  const ref = useRef<HTMLDivElement | null>(null);
 
   const projects: Projects[] = [
     {
@@ -136,6 +137,18 @@ function Experience({}: Props) {
     settopic(category);
   }
 
+  function moveRight() {
+    if (ref.current) {
+      ref.current.scrollBy({ top: 0, left: 300, behavior: "smooth" });
+    }
+  }
+
+  function moveLeft() {
+    if (ref.current) {
+      ref.current.scrollBy({ top: 0, left: -300, behavior: "smooth" });
+    }
+  }
+
   return (
     <div
       className="h-screen flex flex-col justify-center items-center relative p-16
@@ -150,7 +163,7 @@ function Experience({}: Props) {
         </h2>
       </div>
 
-      <div className="flex flex-row max-w-[400px] py-6 md:max-w-none overflow-x-scroll scrollbar-hide ">
+      <div className="flex flex-row w-full justify-start items-center py-6 md:max-w-none overflow-x-scroll scrollbar-hide ">
         {categories.map((item) => {
           return (
             <div className="relative md:mt-0  group mx-4  " key={item.category}>
@@ -171,10 +184,22 @@ function Experience({}: Props) {
           );
         })}
       </div>
-
+      <button
+        className="absolute top-1/2 left-0 z-30  bg-gradient-to-r from-gray-200 to-gray-500 w-12 h-12 rounded-full hover:scale-110 transition-all duration-300 hidden sm:flex"
+        onClick={moveLeft}
+      >
+        <AiOutlineLeft className="w-12 h-12 text-[#322873]" />
+      </button>
+      <button
+        className="absolute top-1/2 right-0 z-30 bg-gradient-to-r from-gray-200 to-gray-500 w-12 h-12 rounded-full transition-all duration-300 hover:scale-110 hidden sm:flex"
+        onClick={moveRight}
+      >
+        <AiOutlineRight className="w-12 h-12 text-[#282897]" />
+      </button>
       <div
-        className="flex justify-start items-center md:py-20  gap-x-8 overflow-x-scroll group 
-      cursor-pointer overflow-hidden  max-w-[360px] md:max-w-6xl scrollbar-hide"
+        className="flex flex-row  justify-start items-center md:py-20 md:px-8  gap-x-8 overflow-x-scroll group 
+      cursor-pointer  overflow-hidden w-[100%]  scrollbar-hide"
+        ref={ref}
       >
         {/* Card Section */}
 
@@ -207,6 +232,7 @@ function Experience({}: Props) {
             );
           })}
       </div>
+
       <div
         className="relative overflow-hidden group rounded-full hover:border-2 border-[#250d6e] p-1
        mt-10 md:mt-6  hover:scale-110 hover:shadow-2xl hover:shadow-gray-300 transition duration-700"
@@ -223,3 +249,4 @@ function Experience({}: Props) {
 }
 
 export default Experience;
+/* max-w-[360px] md:max-w-6xl */
